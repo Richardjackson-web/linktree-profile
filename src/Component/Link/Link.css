@@ -7,9 +7,58 @@
     font-size: 18px;
     color: #101828;
     background: #EAECF0;
-    /* border: 1px solid #0b0b0b; */
     border-radius: 8px;
-    padding: 0rem 35rem 0rem 35rem;
+    text-decoration: none;
+}
+#btn__zuri{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    background: #EAECF0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#books{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    background: #EAECF0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#book__python{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    background: #EAECF0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#pitch{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    background: #EAECF0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#book__design{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    background: #EAECF0;
+    border-radius: 8px;
+    text-decoration: none;
 }
 .main-btn{
     text-align: center;
@@ -17,37 +66,121 @@
 }
 @media screen and (min-width:300px) {
     .link-button{
-        padding-left: 6rem;
-        padding-right:6rem;
+        padding: 1rem 6rem 1rem 6rem;
+    }
+    #btn__zuri{
+        padding: 1rem 6.5rem 1rem 6.5rem;
+    }
+    #books{
+        padding: 1rem 6.5rem 1rem 6.5rem;
+    }
+    #book__python{
+        padding: 1rem 5.8rem 1rem 5.8rem;
+    }
+    #pitch{
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+    #book__design{
+        padding: 1rem 6rem 1rem 6rem;
     }
 }
 @media screen and (min-width:480px) {
     .link-button{
-        padding-left: 11rem;
-        padding-right:11rem;
+        padding: 1rem 11rem 1rem 11rem;
+    }
+    #btn__zuri{
+        padding: 1rem 11.5rem 1rem 11.5rem;
+    }
+    #books{
+        padding: 1rem 11.5rem 1rem 11.5rem;
+    }
+    #book__python{
+        padding:1rem 10.8rem 1rem 10.8rem;
+    }
+    #pitch{
+        padding: 1rem 6.5rem 1rem 6.5rem;
+    }
+    #book__design{
+        padding:1rem 11rem 1rem 11rem;
     }
 }
 @media screen and (min-width:600px) {
     .link-button{
-        padding-left: 15rem;
-        padding-right:15rem;
+        padding: 1rem 15rem 1rem 15rem;
+    }
+    #btn__zuri{
+        padding: 1rem 15.5rem 1rem 15.5rem;
+    }
+    #books{
+        padding: 1rem 15.5rem 1rem 15.5rem;
+    }
+    #book__python{
+        padding: 1rem 14.8rem 1rem 14.8rem;
+    }
+    #pitch{
+        padding: 1rem 10.5rem 1rem 10.5rem;
+    }
+    #book__design{
+        padding: 1rem 15rem 1rem 15rem;
     }
 }
 @media screen and (min-width:768px) {
     .link-button{
-        padding-left: 20rem;
-        padding-right:20rem;
+        padding: 1rem 20rem 1rem 20rem;
+    }
+    #btn__zuri{
+        padding: 1rem 20.5rem 1rem 20.5rem;
+    }
+    #books{
+        padding: 1rem 20.5rem 1rem 20.5rem;
+    }
+    #book__python{
+        padding: 1rem 19.8rem 1rem 19.8rem;
+    }
+    #pitch{
+        padding: 1rem 15.5rem 1rem 15.5rem;
+    }
+    #book__design{
+        padding: 1rem 20rem 1rem 20rem;
     }
 }
 @media screen and (min-width:1024px) {
     .link-button{
-        padding-left:28rem;
-        padding-right:28rem;
+        padding: 1rem 28rem 1rem 28rem;
+    }
+    #btn__zuri{
+        padding: 1rem 28.5rem 1rem 28.5rem;
+    }
+    #books{
+        padding: 1rem 28.5rem 1rem 28.5rem;
+    }
+    #book__python{
+        padding: 1rem 27.8rem 1rem 27.8rem;
+    }
+    #pitch{
+        padding: 1rem 23.5rem 1rem 23.5rem;
+    }
+    #book__design{
+        padding: 1rem 28rem 1rem 28rem;
     }
 }
 @media screen and (min-width:1200px) {
     .link-button{
-        padding-left: 33rem;
-        padding-right:33rem;
+        padding: 1rem 33rem 1rem 33rem;
+    }
+    #btn__zuri{
+        padding: 1rem 33.5rem 1rem 33.5rem;
+    }
+    #books{
+        padding: 1rem 33.5rem 1rem 33.5rem;
+    }
+    #book__python{
+        padding: 1rem 32.8rem 1rem 32.8rem;
+    }
+    #pitch{
+        padding: 1rem 28.5rem 1rem 28.5rem;
+    }
+    #book__design{
+        padding: 1rem 33rem 1rem 33rem;
     }
 }
