@@ -1,18 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 .link-button{
-    width: 90%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    padding: 24px 32px;
     color: #101828;
     background: #EAECF0;
-    border: 1px solid #EAECF0;
+    /* border: 1px solid #0b0b0b; */
     border-radius: 8px;
+    padding: 0rem 35rem 0rem 35rem;
 }
 .main-btn{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 50px;
+}
+@media screen and (min-width:300px) {
+    .link-button{
+        padding-left: 6rem;
+        padding-right:6rem;
+    }
+}
+@media screen and (min-width:480px) {
+    .link-button{
+        padding-left: 11rem;
+        padding-right:11rem;
+    }
+}
+@media screen and (min-width:600px) {
+    .link-button{
+        padding-left: 15rem;
+        padding-right:15rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .link-button{
+        padding-left: 20rem;
+        padding-right:20rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .link-button{
+        padding-left:28rem;
+        padding-right:28rem;
+    }
+}
+@media screen and (min-width:1200px) {
+    .link-button{
+        padding-left: 33rem;
+        padding-right:33rem;
+    }
 }
