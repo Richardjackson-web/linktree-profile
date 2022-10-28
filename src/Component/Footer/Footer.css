@@ -1,0 +1,117 @@
+.icon{
+    margin-top: 50px;
+   text-align: center;
+}
+.git{
+    margin-left: 15px;
+}
+hr{
+    margin: 20px 80px 0px 80px;
+}
+.foot{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+.zuri{
+    width: 40%;
+}
+.hng{
+    width: 50%;
+}
+.i4g{
+    width: 5%;
+    text-align: center;
+}
+@media screen and (min-width:1200px) {
+    .foot{
+        margin-top: 50px;
+        display: flex;
+        width: 80%;
+    }
+    .zuri{
+        width: 30%;
+    }
+    .hng{
+        width: 40%;
+    }
+    .i4g{
+        width: 5%;
+        text-align: center;
+    }   
+}
+@media screen and (min-width:1024px) {
+    .foot{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .zuri{
+        width: 40%;
+    }
+    .hng{
+        width: 50%;
+    }
+    .i4g{
+        width: 5%;
+        text-align: center;
+    }   
+}
+@media screen and (min-width:768px) {
+    .foot{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .zuri{
+        width: 40%;
+    }
+    .hng{
+        width: 50%;
+    }
+    .i4g{
+        width: 5%;
+        text-align: center;
+    }   
+}
+@media screen and (min-width:600px) {
+    .foot{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .zuri{
+        width: 40%;
+    }
+    .hng{
+        width: 50%;
+    }
+    .i4g{
+        width: 5%;
+        text-align: center;
+    }   
+}
+@media screen and (min-width:480px) {
+    .foot{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .zuri{
+        width: 40%;
+    }
+    .hng{
+        width: 50%;
+    }
+    .i4g{
+        width: 5%;
+        text-align: center;
+    }   
+}
+@media screen and (max-width:500px) {
+    .foot{
+        margin-top: 50px;
+        display: block;
+        line-height: 35px;
+    }
+}
