@@ -15,3 +15,27 @@
     font-weight: 700;
     font-size: 20px;
 }
+.pro{
+    position: relative;
+}
+.share{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.mobile-share{
+    display: none;
+}
+@media screen and (max-width:580px) {
+    .share{
+        display: none;
+    }
+    .mobile-share{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }    
+}
