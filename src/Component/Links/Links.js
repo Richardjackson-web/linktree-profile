@@ -1,6 +1,8 @@
 import React from 'react';
 import './Link.css';
 import {Outlet, Link} from 'react-router-dom';
+import Slack from '../../Image/slack.png';
+import GitHub from '../../Image/GitHub.png';
 
 function Links() {
   return (
@@ -29,6 +31,10 @@ function Links() {
             </a>
             <br /><br/><br/>
             <Link className="con" to="/contact"><a id="contact">Contact Me</a></Link>
+        </div>
+        <div className="icon">
+            <img src={Slack}/>
+            <img className="git" src={GitHub}/>
         </div>
         <Outlet/>
     </div>

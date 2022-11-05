@@ -13,6 +13,7 @@ function Profile() {
         <h2 id="twitter">@i_am_richaard</h2>
         {/* <h2 id="slack">RichardJackson-web</h2> */}
     </div>
+    
   )
 }
 

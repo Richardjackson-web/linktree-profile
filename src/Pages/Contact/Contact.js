@@ -10,36 +10,49 @@ import Footer from '../../Component/Footer/Footer';
 function Contact() {
   return (
     <div>
+        <Row>
+        <Col className="row"   md={10}>
         <div>
-            <h1>Contact Me</h1>
-            <p>
+            <h1 className="contact">Contact Me</h1>
+            <p className="hi-con">
                 Hi there, contact me to ask me about anything you have in mind.
             </p>
         </div>
+        </Col>
+        </Row>
         <div>
             <Form>
             <Row>
-        <Col>
-            <Form.Label>First name</Form.Label>
-          <Form.Control placeholder="First name" />
+        <Col className="row" md={4}>
+            <Form.Label className="first">First name</Form.Label>
+          <Form.Control id="first_name" placeholder="First name" />
         </Col>
-        <Col>
-        <Form.Label>Last name</Form.Label>
-          <Form.Control placeholder="Last name" />
+        <Col className="row" md={4}>
+        <Form.Label className="last">Last name</Form.Label>
+          <Form.Control id="last_name" placeholder="Last name" />
         </Col>
         </Row>
         <Row>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="name@example.com" />
+          <Col className="row" md={10}>
+          <Form.Label className="email">Email address</Form.Label>
+        <Form.Control id="email" type="email" placeholder="name@example.com" />
+          </Col>
         </Row>
         <Row>
+            <Col className="row" md={10}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} placeholder="Send me a message and I'll reply you as soon as possible..." />
+            <Form.Label className="message">Message</Form.Label>
+            <Form.Control id="message" as="textarea" rows={3} placeholder="Send me a message and I'll reply you as soon as possible..." />
             </Form.Group>
+            </Col>
         </Row>
         <Row>
-        {['checkbox'].map((type) => (
+        
+        </Row>
+          <Row>
+            
+              <Col className="row" md="10">
+              {['checkbox'].map((type) => (
         <div key={`inline-${type}`} className="mb-3">
           <Form.Check
             inline
@@ -50,14 +63,15 @@ function Contact() {
           />
         </div>
       ))}
-        </Row>
+              <div className="d-grid gap-2">
+              <Button id="btn_submit" variant="primary" size="lg">
+                  Block level button
+              </Button>
+              </div>
+              </Col>
+          </Row>
     </Form>
         </div>
-        <div className="d-grid gap-2">
-      <Button variant="primary" size="lg">
-        Block level button
-      </Button>
-      </div>
       <Footer/>
     </div>
   )
