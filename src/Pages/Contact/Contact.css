@@ -36,3 +36,8 @@
 .form-div{
     margin-bottom: 40px;
 }
+@media screen and (max-width:764px) {
+    .first, .last, .email, .message, .check, .but{
+        margin-top: 20px;
+    }
+}

@@ -34,7 +34,7 @@ function Contact() {
         </Row>
         <Row>
           <Col className="row" md={10}>
-          <Form.Label className="email">Email address</Form.Label>
+          <Form.Label className="email">Email</Form.Label>
         <Form.Control id="email" type="email" placeholder="yourname@email.com" />
           </Col>
         </Row>
@@ -59,12 +59,13 @@ function Contact() {
             label="You agree to providing your data to {name} who may contact you."
             name="group1"
             type={type}
+            className="check"
             id={`inline-${type}-1`}
           />
         </div>
       ))}
               <div className="d-grid gap-2">
-              <Button id="btn_submit" variant="primary" size="lg">
+              <Button className="but" id="btn_submit" variant="primary" size="lg">
               Send message
               </Button>
               </div>
