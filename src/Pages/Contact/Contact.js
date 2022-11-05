@@ -56,7 +56,7 @@ function Contact() {
         <div key={`inline-${type}`} className="mb-3">
           <Form.Check
             inline
-            label="You agree to providing your data to {name} who may contact you."
+            label="You agree to providing your data to Richard who may contact you."
             name="group1"
             type={type}
             className="check"
