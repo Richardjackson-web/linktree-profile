@@ -1,14 +1,11 @@
 import './App.css';
-import Profile from './Component/Profile/Profile';
-import Link from './Component/Link/Link';
-import Footer from './Component/Footer/Footer';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <div>
-      <Profile />
-      <Link />
-      <Footer />
+      <Home/>
+
     </div>
   );
 }

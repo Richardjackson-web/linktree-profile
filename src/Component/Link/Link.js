@@ -26,6 +26,8 @@ function Link() {
             <a href="https://books.zuri.team/design-rules" id="book__design" title="It's one thing to design and another to make appealing designs. Check out this rule book.">
                 Design Books
             </a>
+            <br /><br/><br/>
+            <a href="" id="contact">Contact Me</a>
         </div>
     </div>
   )
