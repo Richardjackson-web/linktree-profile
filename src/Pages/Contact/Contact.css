@@ -30,3 +30,9 @@
 .row{
     margin: auto;
 }
+.first-row{
+    margin-top: 80px;
+}
+.form-div{
+    margin-bottom: 40px;
+}

@@ -10,7 +10,7 @@ import Footer from '../../Component/Footer/Footer';
 function Contact() {
   return (
     <div>
-        <Row>
+        <Row className="first-row">
         <Col className="row"   md={10}>
         <div>
             <h1 className="contact">Contact Me</h1>
@@ -20,29 +20,29 @@ function Contact() {
         </div>
         </Col>
         </Row>
-        <div>
+        <div className="form-div">
             <Form>
             <Row>
         <Col className="row" md={4}>
             <Form.Label className="first">First name</Form.Label>
-          <Form.Control id="first_name" placeholder="First name" />
+          <Form.Control id="first_name" placeholder="Enter your first name" />
         </Col>
         <Col className="row" md={4}>
         <Form.Label className="last">Last name</Form.Label>
-          <Form.Control id="last_name" placeholder="Last name" />
+          <Form.Control id="last_name" placeholder="Enter your last name" />
         </Col>
         </Row>
         <Row>
           <Col className="row" md={10}>
           <Form.Label className="email">Email address</Form.Label>
-        <Form.Control id="email" type="email" placeholder="name@example.com" />
+        <Form.Control id="email" type="email" placeholder="yourname@email.com" />
           </Col>
         </Row>
         <Row>
             <Col className="row" md={10}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label className="message">Message</Form.Label>
-            <Form.Control id="message" as="textarea" rows={3} placeholder="Send me a message and I'll reply you as soon as possible..." />
+            <Form.Control id="message" as="textarea" rows={5} placeholder="Send me a message and I'll reply you as soon as possible..." />
             </Form.Group>
             </Col>
         </Row>
@@ -65,7 +65,7 @@ function Contact() {
       ))}
               <div className="d-grid gap-2">
               <Button id="btn_submit" variant="primary" size="lg">
-                  Block level button
+              Send message
               </Button>
               </div>
               </Col>
