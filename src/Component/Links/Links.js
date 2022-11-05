@@ -1,7 +1,8 @@
 import React from 'react';
 import './Link.css';
+import {Outlet, Link} from 'react-router-dom';
 
-function Link() {
+function Links() {
   return (
     <div>
         <div className="main-btn">
@@ -27,10 +28,11 @@ function Link() {
                 Design Books
             </a>
             <br /><br/><br/>
-            <a href="" id="contact">Contact Me</a>
+            <Link className="con" to="/contact"><a id="contact">Contact Me</a></Link>
         </div>
+        <Outlet/>
     </div>
   )
 }
 
-export default Link
+export default Links
