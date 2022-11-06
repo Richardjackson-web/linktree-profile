@@ -15,8 +15,10 @@ function Contact() {
       event.preventDefault();
       event.stopPropagation();
     }
+    else{
+      alert("Thank you for submitting...you will hear from me soon.")
+    }
     setValidated(true);
-    // alert("Thank you for submitting...you will hear from me soon.")
   };
   return (
     <div>
