@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Contact.css';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -8,9 +8,15 @@ import Button from 'react-bootstrap/Button';
 import Footer from '../../Component/Footer/Footer';
 
 function Contact() {
-  function sendMessage(e){
-    e.preventDefault();
-    alert("Thank you for submitting...you will hear from me soon.")
+  const [validated, setValidated] = useState(false);
+  const sendMessage = (event)=>{
+    const form = event.currentTarget;
+    if (form.checkValidity() === false){
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    setValidated(true);
+    // alert("Thank you for submitting...you will hear from me soon.")
   };
   return (
     <div>
@@ -25,28 +31,28 @@ function Contact() {
         </Col>
         </Row>
         <div className="form-div">
-            <Form>
+            <Form noValidate validated={validated} onSubmit={sendMessage}>
             <Row>
         <Col className="row" md={4}>
             <Form.Label className="first">First name</Form.Label>
-          <Form.Control id="first_name" placeholder="Enter your first name" />
+          <Form.Control id="first_name" placeholder="Enter your first name" required/>
         </Col>
         <Col className="row" md={4}>
         <Form.Label className="last">Last name</Form.Label>
-          <Form.Control id="last_name" placeholder="Enter your last name" />
+          <Form.Control id="last_name" placeholder="Enter your last name" required/>
         </Col>
         </Row>
         <Row>
           <Col className="row" md={10}>
           <Form.Label className="email">Email</Form.Label>
-        <Form.Control id="email" type="email" placeholder="yourname@email.com" />
+        <Form.Control id="email" type="email" placeholder="yourname@email.com" required/>
           </Col>
         </Row>
         <Row>
             <Col className="row" md={10}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label className="message">Message</Form.Label>
-            <Form.Control id="message" as="textarea" rows={5} placeholder="Send me a message and I'll reply you as soon as possible..." />
+            <Form.Control id="message" as="textarea" rows={5} placeholder="Send me a message and I'll reply you as soon as possible..." required/>
             </Form.Group>
             </Col>
         </Row>
@@ -63,13 +69,14 @@ function Contact() {
             label="You agree to providing your data to Richard who may contact you."
             name="group1"
             type={type}
+            required
             className="check"
             id={`inline-${type}-1`}
           />
         </div>
       ))}
               <div className="d-grid gap-2">
-              <Button onClick={sendMessage} className="but" id="btn_submit" variant="primary" size="lg">
+              <Button type="submit" className="but" id="btn_submit" variant="primary" size="lg">
               Send message
               </Button>
               </div>
