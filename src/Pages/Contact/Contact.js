@@ -8,6 +8,10 @@ import Button from 'react-bootstrap/Button';
 import Footer from '../../Component/Footer/Footer';
 
 function Contact() {
+  function sendMessage(e){
+    e.preventDefault();
+    alert("Thank you for submitting...you will hear from me soon.")
+  };
   return (
     <div>
         <Row className="first-row">
@@ -65,7 +69,7 @@ function Contact() {
         </div>
       ))}
               <div className="d-grid gap-2">
-              <Button className="but" id="btn_submit" variant="primary" size="lg">
+              <Button onClick={sendMessage} className="but" id="btn_submit" variant="primary" size="lg">
               Send message
               </Button>
               </div>
